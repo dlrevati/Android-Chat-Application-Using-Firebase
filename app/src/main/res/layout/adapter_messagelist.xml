@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_cname"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:gravity="left|center" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/delete"
+            android:onClick="deleteClicked"
+            android:id="@+id/imageButton_delete"
+            android:layout_alignBottom="@+id/tv_cname"
+            android:layout_toRightOf="@+id/tv_cname"
+            android:layout_toEndOf="@+id/tv_cname" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_message"
+        android:textSize="17sp"
+        android:layout_toStartOf="@+id/imageButton_delete"
+        android:layout_below="@+id/tv_cname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_date"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_message"
+        android:layout_toLeftOf="@+id/imageButton_delete"
+        android:layout_toStartOf="@+id/imageButton_delete" />
+
+
+</LinearLayout>
